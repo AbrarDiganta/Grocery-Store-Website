@@ -8,18 +8,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- custome color -->
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: "#da373d",
-                "bike-primary": "#E76F51",
-                "bike-primary-bg": "rgba(231, 111, 01, 0.1)",
-              },
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "red",
             },
           },
-        };
-      </script>
+        },
+      };
     </script>
     <!-- daisy UI cdn -->
     <link
@@ -51,31 +48,36 @@
   </head>
   <body class="font-family">
     <!-- header section -->
-    <header  class="md:container mx-auto">
+    <header class="md:container mx-auto">
       <!-- navbar -->
       <nav>
         <div class="navbar bg-base-100">
           <div class="navbar-start">
-          
             <a class="text-xl"
               ><img src="c2-assets/logo-header.png" alt=""
             /></a>
           </div>
-          <div class="navbar-center hidden lg:flex items-center justify-center">
+          <div class="navbar-center hidden md:flex items-center justify-center">
             <ul class="menu menu-horizontal px-1 navbar-center">
-                <li><a class="text-xl">Product</a></li>
-                <li><a class="text-xl">Services</a></li>
-                <li><a  class="text-xl">Contact Us</a></li>
+              <li><a class="text-xl">Product</a></li>
+              <li><a class="text-xl">Services</a></li>
+              <li><a class="text-xl">Contact Us</a></li>
             </ul>
           </div>
-          <div class="navbar-end hidden md:block ml-48">
+          <div class="navbar-end hidden lg:block ml-48">
             <a><i class="fa-solid fa-magnifying-glass text-xl"></i></a>
             <a><i class="fa-solid fa-cart-shopping mx-6 text-xl"></i></a>
             <a class="btn text-xl font-normal border-green-600 mr-4">Login</a>
-            <a class="btn bg-green-600 text-white text-xl font-normal">Register</a>
+            <a class="btn bg-green-600 text-white text-xl font-normal"
+              >Register</a
+            >
           </div>
           <div class="dropdown ml-28">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-green-600">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost lg:hidden text-green-600"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -91,11 +93,33 @@
                 />
               </svg>
             </div>
-            
           </div>
         </div>
-        <hr class="border-solid border-1 border-green-600 md:hidden">
+        <hr class="border-solid border-1 border-green-600 md:hidden" />
       </nav>
+      <!-- banner section -->
+      <section class="my-20">
+        <div class="hero">
+          <div class="hero-content text-center">
+            <div class="">
+              <h1 class="text-5xl font-semibold">
+                Freshness
+                <span class="text-green-600">
+                  You Can <br />
+                  Count</span
+                >
+                On, Prices You’ll Love!
+              </h1>
+              <p class="py-6 text-gray-500">
+                Shop your daily essentials at unbeatable prices. From fresh
+                produce to pantry <br />
+                staples, we’ve got you covered every day!
+              </p>
+              <img src="c2-assets/hero-vegetables.png" class="w-full" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
     <!-- main section -->
     <main></main>
