@@ -8,7 +8,7 @@
 .spn {
   display: inline;
 
-  letter-spacing: 4px;
+  letter-spacing: 2px;
 
   transform: rotate(360deg);
   animation: animate 4s linear infinite;
