@@ -45,20 +45,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="font-family">
     <!-- header section -->
     <header class="md:container mx-auto">
       <!-- navbar -->
-      <nav>
-        <div class="navbar bg-base-100">
+      <nav class="">
+        <div class="navbar lg:ml-10 lg:mt-6">
           <div class="navbar-start">
             <a class="text-xl"
               ><img src="c2-assets/logo-header.png" alt=""
             /></a>
           </div>
           <div class="navbar-center hidden md:flex items-center justify-center">
-            <ul class="menu menu-horizontal px-1 navbar-center">
+            <ul class="menu menu-horizontal px-1 navbar-center ml-36 mt-4">
               <li><a class="text-xl">Product</a></li>
               <li><a class="text-xl">Services</a></li>
               <li><a class="text-xl">Contact Us</a></li>
@@ -72,7 +73,7 @@
               >Register</a
             >
           </div>
-          <div class="dropdown ml-28">
+          <div class="dropdown ml-32">
             <div
               tabindex="0"
               role="button"
@@ -122,8 +123,440 @@
       </section>
     </header>
     <!-- main section -->
-    <main></main>
+    <main>
+      <!-- services section -->
+      <section class="md:container m-auto">
+        <h2 class="text-green-600 text-4xl font-semibold my-12">Services</h2>
+        <!-- cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- card-1 -->
+          <div class="card bg-zinc-100 shadow-xl">
+            <figure class="py-6">
+              <div class="avatar bg-white rounded-full">
+                <div class="rounded-full p-4">
+                  <img src="c2-assets/service.png" />
+                </div>
+              </div>
+            </figure>
+            <div class="card-body">
+              <h2 class="text-2xl font-semibold text-center">24/7 Services</h2>
+              <p class="text-xl font-light text-center mt-4">
+                "Shop groceries online 24/7 with fast delivery. Fresh
+                essentials, seamless ordering, and hassle-free service—anytime,
+                anywhere, at your convenience!"
+              </p>
+            </div>
+          </div>
+          <!-- card-2 -->
+          <div class="card bg-zinc-200 shadow-xl">
+            <figure class="py-6">
+              <div class="avatar bg-white rounded-full">
+                <div class="rounded-full p-4">
+                  <img src="c2-assets/delivery.png" />
+                </div>
+              </div>
+            </figure>
+            <div class="card-body">
+              <h2 class="text-2xl font-semibold text-center">Fast Delivery</h2>
+              <p class="text-xl font-light text-center mt-4">
+                "Shop groceries online 24/7 with fast delivery. Fresh
+                essentials, seamless ordering, and hassle-free service—anytime,
+                anywhere, at your convenience!"
+              </p>
+            </div>
+          </div>
+          <!-- card-3 -->
+          <div class="card bg-zinc-200 shadow-xl">
+            <figure class="py-6">
+              <div class="avatar bg-white rounded-full">
+                <div class="rounded-full p-4">
+                  <img src="c2-assets/healthy.png" />
+                </div>
+              </div>
+            </figure>
+            <div class="card-body">
+              <h2 class="text-2xl font-semibold text-center">
+                Healthy Products
+              </h2>
+              <p class="text-xl font-light text-center mt-4">
+                "Shop groceries online 24/7 with fast delivery. Fresh
+                essentials, seamless ordering, and hassle-free service—anytime,
+                anywhere, at your convenience!"
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- poplur products section -->
+      <section class="m-auto bg-zinc-200 my-12">
+        <!-- product card -->
+        <div class="lg:p-24 lg:flex gap-6 border items-center justify-center">
+          <!-- product-1 -->
+          <div
+            class="card border bg-gradient-to-r from-green-500 to-green-300 shadow-xl"
+          >
+            <div class="card-body">
+              <h2 class="card-title text-white text-4xl">30% Off</h2>
+              <p class="text-xl">
+                Discover a world of treats, toys, and essentials handpicked
+                vegetables
+              </p>
+              <div class="card-actions">
+                <button class="btn bg-white text-black">Buy Now</button>
+              </div>
+              <figure class="-mb-7 ml-20">
+                <img src="c2-assets/vegetable-offer.png" alt="Shoes" class="" />
+              </figure>
+            </div>
+          </div>
+          <!-- grid product -->
+          <div
+            class="grid grid-cols-2 lg:grid-cols-3 lg:w-2/3 lg:gap-4 gap-2 my-2"
+          >
+            <div
+              class="card card-side bg-base-100 shadow-xl lg:w-96 lg:h-44 w-48 h-28"
+            >
+              <figure>
+                <img
+                  src="c2-assets/onion.jpg"
+                  alt="Album"
+                  class="px-4 lg:w-40 lg:h-32 rounded-2xl"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="rating lg:-ml-8 -mt-6 -ml-10">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400 lg:text-lg text-sm"
+                  />
+                  <p class="lg:text-lg lg:ml-4 ml-2 text-sm">4.5</p>
+                </div>
+                <h2
+                  class="card-title text-sm font-bold lg:text-lg lg:-ml-6 -ml-10"
+                >
+                  Onion 1 KG
+                </h2>
+                <p class="lg:-ml-6 text-sm -ml-10">$39.99</p>
+              </div>
+            </div>
+            <div
+              class="card card-side bg-base-100 shadow-xl lg:w-96 lg:h-44 w-48 h-28 lg:ml-4"
+            >
+              <figure>
+                <img
+                  src="c2-assets/tomato.jpg"
+                  alt="Album"
+                  class="px-4 lg:w-40 lg:h-32 rounded-2xl"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="rating lg:-ml-4 lg:mt-2 -mt-4 -ml-8">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400 lg:text-lg text-sm"
+                  />
+                  <p class="lg:text-lg lg:ml-2 ml-2 text-sm">4.5</p>
+                </div>
+                <h2
+                  class="card-title text-sm font-bold lg:text-lg lg:-ml-4 -ml-10"
+                >
+                  Tomato 500 G
+                </h2>
+                <p class="lg:-ml- text-sm -ml-10">$39.99</p>
+              </div>
+            </div>
+            <div
+              class="card card-side bg-base-100 shadow-xl lg:w-96 lg:h-44 w-48 h-28 ml-8"
+            >
+              <figure>
+                <img
+                  src="c2-assets/potato.jpg"
+                  alt="Album"
+                  class="px-4 lg:w-40 lg:h-32 rounded-2xl"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="rating lg:-ml-6 mt-2 -ml-10">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400 lg:text-lg text-sm"
+                  />
+                  <p class="lg:text-lg lg:ml-2 ml-2 text-sm">4.5</p>
+                </div>
+                <h2
+                  class="card-title text-sm font-bold lg:text-lg lg:-ml-6 -ml-10"
+                >
+                  Potato 1 KG
+                </h2>
+                <p class="lg:-ml-6 text-sm -ml-10">$39.99</p>
+              </div>
+            </div>
+            <div
+              class="card card-side bg-base-100 shadow-xl lg:w-96 lg:h-44 w-48 h-28"
+            >
+              <figure>
+                <img
+                  src="c2-assets/tomato.jpg"
+                  alt="Album"
+                  class="px-4 lg:w-40 lg:h-32 rounded-2xl"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="rating lg:-ml-8 mt-2 -ml-10">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400 lg:text-lg text-sm"
+                  />
+                  <p class="lg:text-lg lg:ml-4 ml-2 text-sm">4.5</p>
+                </div>
+                <h2
+                  class="card-title text-sm font-bold lg:text-lg lg:-ml-6 -ml-10"
+                >
+                  Tomato 500 G
+                </h2>
+                <p class="lg:-ml-6 text-sm -ml-10">$39.99</p>
+              </div>
+            </div>
+            <div
+              class="card card-side bg-base-100 shadow-xl lg:w-96 lg:h-44 w-48 h-28 lg:ml-4"
+            >
+              <figure>
+                <img
+                  src="c2-assets/onion.jpg"
+                  alt="Album"
+                  class="px-4 lg:w-40 lg:h-32 rounded-2xl"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="rating lg:-ml-8 mt-2 -ml-10">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400 lg:text-lg text-sm"
+                  />
+                  <p class="lg:text-lg lg:ml-4 ml-2 text-sm">4.5</p>
+                </div>
+                <h2
+                  class="card-title text-sm font-bold lg:text-lg lg:-ml-6 -ml-10"
+                >
+                  Onion 1 KG
+                </h2>
+                <p class="lg:-ml-6 text-sm -ml-10">$39.99</p>
+              </div>
+            </div>
+            <div
+              class="card card-side bg-base-100 shadow-xl lg:w-96 lg:h-44 w-48 h-28 lg:ml-8"
+            >
+              <figure>
+                <img
+                  src="c2-assets/potato.jpg"
+                  alt="Album"
+                  class="px-4 lg:w-40 lg:h-32 rounded-2xl"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="rating lg:-ml-8 mt-2 -ml-10">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400 lg:text-lg text-sm"
+                  />
+                  <p class="lg:text-lg lg:ml-4 ml-2 text-sm">4.5</p>
+                </div>
+                <h2
+                  class="card-title text-sm font-bold lg:text-lg lg:-ml-6 -ml-10"
+                >
+                  Potato 1 KG
+                </h2>
+                <p class="lg:-ml-6 text-sm -ml-10">$39.99</p>
+              </div>
+            </div>
+            <div
+              class="card card-side bg-base-100 shadow-xl lg:w-96 lg:h-44 w-48 h-28"
+            >
+              <figure>
+                <img
+                  src="c2-assets/onion.jpg"
+                  alt="Album"
+                  class="px-4 lg:w-40 lg:h-32 rounded-2xl"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="rating lg:-ml-8 mt-2 -ml-10">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400 lg:text-lg text-sm"
+                  />
+                  <p class="lg:text-lg lg:ml-4 ml-2 text-sm">4.5</p>
+                </div>
+                <h2
+                  class="card-title text-sm font-bold lg:text-lg lg:-ml-6 -ml-10"
+                >
+                  Onion 1 KG
+                </h2>
+                <p class="lg:-ml-6 text-sm -ml-10">$39.99</p>
+              </div>
+            </div>
+            <div
+              class="card card-side bg-base-100 shadow-xl lg:w-96 lg:h-44 w-48 h-28 lg:ml-4"
+            >
+              <figure>
+                <img
+                  src="c2-assets/potato.jpg"
+                  alt="Album"
+                  class="px-4 lg:w-40 lg:h-32 rounded-2xl"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="rating lg:-ml-8 mt-2 -ml-10">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400 lg:text-lg text-sm"
+                  />
+                  <p class="lg:text-lg lg:ml-4 ml-2 text-sm">4.5</p>
+                </div>
+                <h2
+                  class="card-title text-sm font-bold lg:text-lg lg:-ml-6 -ml-10"
+                >
+                  Onion 1 KG
+                </h2>
+                <p class="lg:-ml-6 text-sm -ml-10">$39.99</p>
+              </div>
+            </div>
+            <div class="hidden md:block">
+              <div
+                class="card card-side bg-base-100 shadow-xl lg:w-96 lg:h-44 w-48 h-28 ml-8"
+              >
+                <figure>
+                  <img
+                    src="c2-assets/tomato.jpg"
+                    alt="Album"
+                    class="px-4 lg:w-40 lg:h-32 rounded-2xl"
+                  />
+                </figure>
+                <div class="card-body">
+                  <div class="rating lg:-ml-8 mt-2 -ml-10">
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400 lg:text-lg text-sm"
+                    />
+                    <p class="lg:text-lg lg:ml-4 ml-2 text-sm">4.5</p>
+                  </div>
+                  <h2
+                    class="card-title text-sm font-bold lg:text-lg lg:-ml-6 -ml-10"
+                  >
+                    Onion 1 KG
+                  </h2>
+                  <p class="lg:-ml-6 text-sm -ml-10">$39.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- arrival and offer section -->
+      <section class="md:container mx-auto my-12 mb-96">
+        <h2 class="text-4xl text-green-600 font-bold">Arrival & Offer</h2>
+        <div class="lg:flex gap-6">
+          <!-- card-1 -->
+          <div
+            class="card border bg-gradient-to-r from-green-500 to-green-300 lg:w-2/3 shadow-xl"
+          >
+            <div class="card-body">
+              <div class="grid grid-cols-2">
+                <div>
+                  <img src="c2-assets/dawat-logo.png" alt="" />
+                  <div class="card-actions mt-6">
+                    <button class="btn bg-green-800 text-white font-semibold">
+                      Cook Exotic Dishes
+                    </button>
+                  </div>
+                  <h2 class="text-4xl font-bold text-white">UP to 20% OFF</h2>
+                </div>
+                <img src="c2-assets/dawat-mock-up.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="card border bg-blue-900 lg:w-1/2 shadow-xl">
+            <div class="card-body">
+              <div class="grid grid-cols-2">
+                <div>
+                  <img src="c2-assets/india-gate-logo.png" alt="" />
+                  <div class="card-actions mt-6">
+                    <button class="btn bg-blue-800 text-white font-semibold">
+                      Cook Exotic Dishes
+                    </button>
+                  </div>
+                  <h2 class="text-4xl font-bold text-white">UP to 20% OFF</h2>
+                </div>
+                <img src="c2-assets/india-gate-mock-up.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- get news section -->
+      <section
+        class="md:container mx-auto bg-zinc-200 rounded-lg absolute lg:-mt-48 lg:ml-44 -mt-80"
+      >
+        <div class="lg:flex justify-center items-center">
+          <img src="c2-assets/vegetable-busket.png" alt="" />
+          <div class="lg:p-24">
+            <h2 class="font-semibold text-4xl text-center lg:text-justify">
+              Get Grocery News!
+            </h2>
+            <p class="text-xl font-normal mt-4 text-center lg:text-justify">
+              Exclusive training tips, ticks, product deals and more.
+            </p>
+            <div class="text-center lg:text-justify">
+              <input
+                type="text"
+                placeholder="Enter Your Email"
+                class="input input-bordered w-full max-w-xs mt-4"
+              />
+            </div>
+            <br />
+            <div class="text-center lg:text-justify">
+              <button
+                class="items-center btn bg-green-600 text-white font-semibold mt-4"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- footer section -->
-    <footer></footer>
+    <footer class="footer bg-green-600 text-base-content p-20">
+      <nav class="lg:mt-56 ml-12 mt-72">
+        <img src="c2-assets/logo-footer.png" alt="" />
+        <p class="text-white font-normal text-xl">
+          Discover a world of treats, toys, and <br />
+          essentials handpicked for your furry friends
+        </p>
+      </nav>
+      <nav class="mt-56">
+        <a class="link link-hover text-white text-xl">Product</a>
+        <a class="link link-hover text-white text-xl">Services</a>
+        <a class="link link-hover text-white text-xl">Contact Us</a>
+      </nav>
+      <nav class="mt-60">
+        <h6 class="text-white font-bold text-xl">Follow Us</h6>
+        <div class="grid grid-flow-col gap-4">
+          <i class="fa-brands fa-facebook text-white"></i>
+          <i class="fa-brands fa-instagram text-white"></i>
+          <i class="fa-brands fa-linkedin text-white"></i>
+          <i class="fa-brands fa-youtube text-white"></i>
+        </div>
+      </nav>
+    </footer>
   </body>
 </html>
