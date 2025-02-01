@@ -49,78 +49,86 @@
   </head>
   <body class="font-family">
     <!-- header section -->
-    <header class="md:container mx-auto">
+    <header class="bg-amber-50">
       <!-- navbar -->
-      <nav class="">
-        <div class="navbar lg:ml-10">
-          <div class="navbar-start">
-            <a class="text-xl"
-              ><img src="c2-assets/logo-header.png" alt=""
-            /></a>
-          </div>
-          <div class="navbar-center hidden md:flex items-center justify-center">
-            <ul class="menu menu-horizontal px-1 navbar-center ml-36">
-              <li><a class="text-xl">Product</a></li>
-              <li><a class="text-xl">Services</a></li>
-              <li><a class="text-xl">Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="navbar-end hidden lg:block ml-48">
-            <a><i class="fa-solid fa-magnifying-glass text-xl"></i></a>
-            <a><i class="fa-solid fa-cart-shopping mx-6 text-xl"></i></a>
-            <a class="btn text-xl font-normal border-green-600 mr-4">Login</a>
-            <a class="btn bg-green-600 text-white text-xl font-normal"
-              >Register</a
-            >
-          </div>
-          <div class="dropdown ml-32">
+      <div class="md:container mx-auto">
+        <nav class="">
+          <div class="navbar lg:ml-10">
+            <div class="navbar-start">
+              <a class="text-xl"
+                ><img src="c2-assets/logo-header.png" alt=""
+              /></a>
+            </div>
             <div
-              tabindex="0"
-              role="button"
-              class="btn btn-ghost lg:hidden text-green-600"
+              class="navbar-center hidden md:flex items-center justify-center"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+              <ul class="menu menu-horizontal px-1 navbar-center ml-36">
+                <li><a class="text-xl">Product</a></li>
+                <li><a class="text-xl">Services</a></li>
+                <li><a class="text-xl">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end hidden lg:block ml-48">
+              <a><i class="fa-solid fa-magnifying-glass text-xl"></i></a>
+              <a><i class="fa-solid fa-cart-shopping mx-6 text-xl"></i></a>
+              <a class="btn text-xl font-normal border-green-600 mr-4">Login</a>
+              <a class="btn bg-green-600 text-white text-xl font-normal"
+                >Register</a
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
             </div>
-          </div>
-        </div>
-        <hr class="border-solid border-1 border-green-600 md:hidden" />
-      </nav>
-      <!-- banner section -->
-      <section class="my-20">
-        <div class="hero">
-          <div class="hero-content text-center">
-            <div class="">
-              <h1 class="text-5xl font-semibold">
-                Freshness
-                <span class="text-green-600">
-                  You Can <br />
-                  Count</span
+            <div class="dropdown ml-32">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost lg:hidden text-green-600"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
                 >
-                On, Prices You’ll Love!
-              </h1>
-              <p class="py-6 text-gray-500">
-                Shop your daily essentials at unbeatable prices. From fresh
-                produce to pantry <br />
-                staples, we’ve got you covered every day!
-              </p>
-              <img src="c2-assets/hero-vegetables.png" class="w-full" alt="" />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+          <hr class="border-solid border-1 border-green-600 md:hidden" />
+        </nav>
+        <!-- banner section -->
+        <section class="my-20">
+          <div class="hero">
+            <div class="hero-content text-center">
+              <div class="">
+                <h1 class="text-5xl font-semibold">
+                  Freshness
+                  <span class="text-green-600">
+                    You Can <br />
+                    Count</span
+                  >
+                  On, Prices You’ll Love!
+                </h1>
+                <p class="py-6 text-gray-500">
+                  Shop your daily essentials at unbeatable prices. From fresh
+                  produce to pantry <br />
+                  staples, we’ve got you covered every day!
+                </p>
+                <img
+                  src="c2-assets/hero-vegetables.png"
+                  class="w-full"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </header>
     <!-- main section -->
     <main>
@@ -474,6 +482,75 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- payment section -->
+      <section class="md:container m-auto lg:mt-20">
+        <h2 class="text-green-600 text-4xl font-semibold my-12 ml-6 lg:ml-2">
+          You Can Pay With
+        </h2>
+        <!-- cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- card-1 -->
+          <div class="card bg-amber-50 shadow-xl m-4">
+            <figure class="py-6">
+              <div class="avatar bg-white rounded-full">
+                <div class="rounded-full p-4">
+                  <img src="c2-assets/bkash.png" />
+                </div>
+              </div>
+            </figure>
+            <div class="card-body">
+              <h2 class="text-2xl font-semibold text-center -mt-8">
+                Pay With Bkash
+              </h2>
+              <p class="text-lg text-gray-600 font-light text-center mt-4">
+                bKash is a popular mobile financial service in Bangladesh,
+                enabling secure money transfers, bill payments, mobile
+                recharges, and digital transactions efficiently.
+              </p>
+            </div>
+          </div>
+          <!-- card-2 -->
+          <div class="card bg-amber-50 shadow-xl m-4">
+            <figure class="py-6">
+              <div class="avatar bg-white rounded-full">
+                <div class="rounded-full p-4">
+                  <img src="c2-assets/nagad.jpg" />
+                </div>
+              </div>
+            </figure>
+            <div class="card-body">
+              <h2 class="text-2xl font-semibold text-center -mt-8">
+                Pay With Nagad
+              </h2>
+              <p class="text-lg text-gray-600 font-light text-center mt-4">
+                Nagad is a digital financial service in Bangladesh, offering
+                secure money transfers, bill payments, mobile recharges, and
+                financial solutions with ease.
+              </p>
+            </div>
+          </div>
+          <!-- card-3 -->
+          <div class="card bg-amber-50 shadow-xl m-4">
+            <figure class="py-6">
+              <div class="avatar bg-white rounded-full">
+                <div class="rounded-full p-4">
+                  <img src="c2-assets/rocket.jpg" />
+                </div>
+              </div>
+            </figure>
+            <div class="card-body">
+              <h2 class="text-2xl font-semibold text-center -mt-8">
+                Pay With Rocket
+              </h2>
+              <p class="text-lg text-gray-600 font-light text-center mt-4">
+                DBBL Rocket is a mobile banking service in Bangladesh, enabling
+                secure money transfers, bill payments, mobile recharges, and
+                financial transactions conveniently.
+              </p>
             </div>
           </div>
         </div>
